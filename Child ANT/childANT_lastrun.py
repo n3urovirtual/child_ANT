@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.1.3),
-    on February 21, 2022, at 15:12
+    on February 21, 2022, at 17:25
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -181,6 +181,14 @@ asterisk = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
+asterisk2 = visual.ImageStim(
+    win=win,
+    name='asterisk2', 
+    image='Stimuli/asterisk.png', mask=None,
+    ori=0, pos=[0,0], size=None,
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-2.0)
 
 # Initialize components for Routine "fixation_2"
 fixation_2Clock = core.Clock()
@@ -264,6 +272,14 @@ asterisk = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
+asterisk2 = visual.ImageStim(
+    win=win,
+    name='asterisk2', 
+    image='Stimuli/asterisk.png', mask=None,
+    ori=0, pos=[0,0], size=None,
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-2.0)
 
 # Initialize components for Routine "fixation_2"
 fixation_2Clock = core.Clock()
@@ -311,7 +327,7 @@ sounds.setVolume(1)
 # Initialize components for Routine "trial_break"
 trial_breakClock = core.Clock()
 text = visual.TextStim(win=win, name='text',
-    text='Κάνε ένα σύντομο διάλειμμα.\n\nΌταν είσαι έτοιμος/η, πάτησε το <SPACE> για να συνεχίσεις.',
+    text='Take a short break.\n\nOnce ready, press the <SPACEBAR> to proceed.',
     font='Times New Roman',
     pos=(0, 0), height=40, wrapWidth=1250, ori=0, 
     color='Black', colorSpace='rgb', opacity=1, 
@@ -935,8 +951,9 @@ for thisPractise_loop in Practise_loop:
     routineTimer.add(0.150000)
     # update component parameters for each repeat
     asterisk.setPos((Cue_X, Cue_Y))
+    asterisk2.setPos((Cue2_X, Cue2_Y))
     # keep track of which components have finished
-    cueComponents = [fix_cross2, asterisk]
+    cueComponents = [fix_cross2, asterisk, asterisk2]
     for thisComponent in cueComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -992,6 +1009,23 @@ for thisPractise_loop in Practise_loop:
                 asterisk.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(asterisk, 'tStopRefresh')  # time at next scr refresh
                 asterisk.setAutoDraw(False)
+        
+        # *asterisk2* updates
+        if asterisk2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            asterisk2.frameNStart = frameN  # exact frame index
+            asterisk2.tStart = t  # local t and not account for scr refresh
+            asterisk2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(asterisk2, 'tStartRefresh')  # time at next scr refresh
+            asterisk2.setAutoDraw(True)
+        if asterisk2.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > asterisk2.tStartRefresh + 0.15-frameTolerance:
+                # keep track of stop time/frame for later
+                asterisk2.tStop = t  # not accounting for scr refresh
+                asterisk2.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(asterisk2, 'tStopRefresh')  # time at next scr refresh
+                asterisk2.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1497,8 +1531,9 @@ for thisMain_loop in Main_loop:
     routineTimer.add(0.150000)
     # update component parameters for each repeat
     asterisk.setPos((Cue_X, Cue_Y))
+    asterisk2.setPos((Cue2_X, Cue2_Y))
     # keep track of which components have finished
-    cueComponents = [fix_cross2, asterisk]
+    cueComponents = [fix_cross2, asterisk, asterisk2]
     for thisComponent in cueComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -1554,6 +1589,23 @@ for thisMain_loop in Main_loop:
                 asterisk.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(asterisk, 'tStopRefresh')  # time at next scr refresh
                 asterisk.setAutoDraw(False)
+        
+        # *asterisk2* updates
+        if asterisk2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            asterisk2.frameNStart = frameN  # exact frame index
+            asterisk2.tStart = t  # local t and not account for scr refresh
+            asterisk2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(asterisk2, 'tStartRefresh')  # time at next scr refresh
+            asterisk2.setAutoDraw(True)
+        if asterisk2.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > asterisk2.tStartRefresh + 0.15-frameTolerance:
+                # keep track of stop time/frame for later
+                asterisk2.tStop = t  # not accounting for scr refresh
+                asterisk2.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(asterisk2, 'tStopRefresh')  # time at next scr refresh
+                asterisk2.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1881,7 +1933,7 @@ for thisMain_loop in Main_loop:
     # ------Prepare to start Routine "trial_break"-------
     continueRoutine = True
     # update component parameters for each repeat
-    if Main_loop.thisN not in [24,48,62]:
+    if Main_loop.thisN not in [36, 72, 108]:
         continueRoutine=False
     key_resp.keys = []
     key_resp.rt = []
