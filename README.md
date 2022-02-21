@@ -5,7 +5,7 @@ A Psychopy implementation of the child Attention Network Test (ANT) as described
 **Attention** is a central component of human cognition and can be defined as the ability to actively process information in the environment while tuning out other details. 
 Based on Posner's model of attention, there are three components or networks of attention, namely the alerting, the orienting, and the executive control. 
 
-The **Attention Network Test (child version)** is a computerized task that was developed to measure these three networks of attention in children. In this test, each trials begins 
+The **ANT (child version)** is a computerized task that was developed to measure these three networks of attention in children. In this test, each trials begins 
 with a fixation cross presented at the center of the screen. Then, attentional cues in the form of (none, one or two) asterisks are shown, which are informative of the upcoming
 target's locaiton. Next, depending on the condition, a single yellow fish or an array of five yellow fish are presented above or below the
 fixation point. The participant has to respond based on the direction of the central fish (in case of the array) or the single fish. If the central fish (or single fish) is pointing 
@@ -24,4 +24,4 @@ by reaction time substractions of different stimulus combinations.
 
 ## How to preprocess/analyze data
 
-To see how you can use Python to preprocess/analyze the data on the `.csv` you got from step 5 above, you can visit this repository.
+To see how you can use Python to preprocess/analyze the data on the `.csv` you got from step 5 above, you can visit this [repository](https://github.com/n3urovirtual/child_ANT_analysis).
