@@ -699,7 +699,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="4" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Το πεινασμένο ψάρι χόρτασε, άρα η αποστολή σου ολοκληρώθηκε.&amp;#10;&amp;#10;Ευχαριστούμε για τη συμμετοχή σου!" valType="str"/>
+        <Param name="text" updates="constant" val="The hungry fish is now full.&amp;#10;&amp;#10;Thank you for your participation!" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="1500" valType="code"/>
       </TextComponent>
