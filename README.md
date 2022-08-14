@@ -24,4 +24,11 @@ by reaction time substractions of different stimulus combinations.
 
 ## How to preprocess/analyze data
 
-To see how you can use Python to preprocess/analyze the data on the `.csv` you got from step 5 above, you can visit this [repository](https://github.com/n3urovirtual/child_ANT_analysis).
+To see how you can preprocess/analyze the data on the `.csv` you got from step 5 above, you can use a Python script in the following path:
+
+
+```
+Child_ANT
+└── Analysis
+    └── Preprocessing_Script.py
+```
