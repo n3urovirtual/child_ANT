@@ -28,7 +28,7 @@ To see how you can preprocess/analyze the data on the `.csv` you got from step 5
 
 
 ```
-Child_ANT
+Child ANT
 └── Analysis
     └── Preprocessing_Script.py
 ```
