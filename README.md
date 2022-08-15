@@ -24,7 +24,7 @@ by reaction time substractions of different stimulus combinations.
 
 ## How to preprocess/analyze data
 
-To see how you can preprocess/analyze the data on the `.csv` you got from step 5 above, you can use a Python script in the following path:
+To preprocess/analyze the data on the `.csv` you got from step 5 above, you can use the Python script in the following path:
 
 
 ```
